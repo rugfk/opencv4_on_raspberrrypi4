@@ -1,0 +1,14 @@
+=======================================================
+How To Install Image Processing OpenCV 4.10.0 on Raspberry Pi4:
+=======================================================
+cd Codes_opencv
+cat 00_HowToCompile.txt
+# Run sample codes.
+g++ -ggdb facedetect.cpp -o facedetect `pkg-config --cflags --libs opencv4`
+
+
+
+# References
+# OpenCV configuration options reference: https://docs.opencv.org/4.10.0/db/d05/tutorial_config_reference.html
+# OpenCV modules: https://docs.opencv.org/4.10.0/
+=======================================================

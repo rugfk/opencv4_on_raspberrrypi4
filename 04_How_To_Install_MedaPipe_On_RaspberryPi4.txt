@@ -1,0 +1,27 @@
+============================================================
+How To Start MediaPipe on Raspberry Pi4
+============================================================
+# Cheese(Webcam app)
+sudo apt-get install cheese
+# Jupyter Notebook
+sudo pip3 install jupyter
+# MediaPipe
+sudo pip3 install mediapipe
+
+# Download MediaPipe Samples.
+git clone https://github.com/google-ai-edge/mediapipe-samples.git 
+
+
+# Run image_classification.
+cd mediapipe-samples/examples/image_classification/raspberry_pi
+wget -O classifier.tflite -q https://storage.googleapis.com/mediapipe-models/image_classifier/efficientnet_lite0/float32/1/efficientnet_lite0.tflite
+sudo pip3 install mediapipe
+python3 classify.py
+
+
+# References:
+https://github.com/google-ai-edge/mediapipe-samples
+https://developers.googleblog.com/ko/introducing-mediapipe-solutions-for-on-device-machine-learning/
+https://qengineering.eu/install-opencv-on-raspberry-64-os.html
+https://github.com/jugfk/downloadManuals/blob/master/19_How_To_Install_OpenCV4.4.0_On_Jetson_Nano.txt
+============================================================

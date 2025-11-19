@@ -1,0 +1,20 @@
+=======================================================
+How To Start OpenCV samples on Raspberry Pi4:
+=======================================================
+# Check Version
+pkg-config --modversion opencv4
+# Check libraries.
+pkg-config --libs --cflags opencv4
+
+cd opencv-4.10.0
+cd samples
+cd python
+
+# Run facedetect.py
+python3 facedetect.py
+
+
+# References
+# OpenCV configuration options reference: https://docs.opencv.org/4.10.0/db/d05/tutorial_config_reference.html
+# OpenCV modules: https://docs.opencv.org/4.10.0/
+=======================================================
