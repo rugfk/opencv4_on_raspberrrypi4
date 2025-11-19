@@ -1,0 +1,9 @@
+#How To Compile:
+
+# Compile and run OpenCV code from the command line on Linux
+# For OpenCV 3 
+cd /path/to/opencv/samples/cpp/
+#Compile
+g++ -ggdb facedetect.cpp -o facedetect `pkg-config --cflags --libs opencv4`
+#run
+./facedetect
